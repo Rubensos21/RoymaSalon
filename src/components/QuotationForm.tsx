@@ -70,10 +70,15 @@ function dayRangeIso(dayKey: string): { start: string; end: string } {
   return { start, end }
 }
 
+function formatDateForWhatsApp(dayKey: string): string {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dayKey)
+  return match ? `${match[3]}/${match[2]}/${match[1]}` : 'por confirmar'
+}
+
 function buildWA(f: FormState) {
   const msg =
     `¡Hola! Solicité una cotización en la web para Salón Jardín LÍA Pachuca para un evento de ` +
-    `${f.event_type} el día ${f.event_date || 'por confirmar'} ` +
+    `${f.event_type} el día ${formatDateForWhatsApp(f.event_date)} ` +
     `con ${f.guest_count || 'N/A'} invitados a nombre de ${f.client_name}.`
   return `https://wa.me/527712202862?text=${encodeURIComponent(msg)}`
 }
@@ -153,7 +158,11 @@ export default function QuotationForm() {
   }
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setForm(p => ({ ...p, [e.target.name]: e.target.value }))
+    const value = e.target.name === 'client_phone'
+      ? e.target.value.replace(/\D/g, '').slice(0, 10)
+      : e.target.value
+
+    setForm(p => ({ ...p, [e.target.name]: value }))
     setDbError(null)
   }
 
@@ -391,7 +400,10 @@ export default function QuotationForm() {
               <div>
                 <Label>WhatsApp *</Label>
                 <input type="tel" name="client_phone" value={form.client_phone}
-                  onChange={onChange} required placeholder="771 123 4567" className={INPUT} />
+                  onChange={onChange} required inputMode="numeric" autoComplete="tel-national"
+                  pattern="[0-9]{10}" minLength={10} maxLength={10}
+                  title="Ingresa un número telefónico de 10 dígitos"
+                  placeholder="7711234567" className={INPUT} />
               </div>
             </div>
           </div>
