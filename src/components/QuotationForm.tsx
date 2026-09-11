@@ -249,24 +249,32 @@ export default function QuotationForm() {
       .from('appointments')
       .insert([appointmentRowWithFk])
 
-    const err = quotesErr ?? aptErr
-    if (err) {
-      const code = err.code ?? 'desconocido'
+    // `appointments` es la fuente que consume /agenda. La copia en
+    // `event_quotes` es complementaria y puede estar restringida por RLS sin
+    // que eso signifique que la solicitud principal no se guardó.
+    if (aptErr) {
+      const code = aptErr.code ?? 'desconocido'
       const hint =
         code === '42P01'
-          ? 'Falta la tabla event_quotes o appointments. Ejecuta el SQL completo del README/Dashboard.md.'
+          ? 'Falta la tabla appointments. Revisa la configuración de Supabase.'
           : code === '42501'
-          ? 'RLS bloqueó el INSERT. Asegúrate de haber creado las políticas anon en ambas tablas.'
+          ? 'RLS bloqueó el INSERT en appointments. Revisa la política anon de esa tabla.'
           : code === '42703'
           ? 'La columna event_quote_id no existe en appointments. Ejecuta el SQL ALTER TABLE del mensaje arriba.'
           : `Código Supabase: ${code}`
 
-      setDbError(`${err.message} — ${hint}`)
-      setLoading(false)
+      setDbError(`${aptErr.message} — ${hint}`)
     } else {
       setDbSaved(true)
       if (appointmentDayKey) {
         setBusyDays((prev) => new Set(prev).add(appointmentDayKey))
+      }
+
+      if (quotesErr) {
+        console.warn(
+          '[Cotización] La solicitud se guardó en appointments; no se pudo crear la copia en event_quotes:',
+          quotesErr.message,
+        )
       }
     }
 
