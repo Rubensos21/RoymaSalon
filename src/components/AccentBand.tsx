@@ -27,7 +27,7 @@ export default function AccentBand() {
           {/* Wordmark top-left — editorial signature */}
           <span className="font-twk-lausanne text-[11px] font-[550] uppercase tracking-[0.11px]
                            text-typesetter-frost/60">
-            Salón RoyMa · Poza Rica, Veracruz
+            Salón Jardín LÍA Pachuca · Pachuca, Hidalgo
           </span>
 
           {/* Big closing statement */}
@@ -51,13 +51,13 @@ export default function AccentBand() {
               Cotizar mi Evento →
             </a>
             <a
-              href="tel:7821137240"
+              href="tel:+527712202862"
               className="inline-flex items-center border border-typesetter-frost/40 text-typesetter-frost
                          font-twk-lausanne text-[11px] font-[550] uppercase tracking-[0.11px]
                          px-30 py-20 rounded-lg
                          hover:border-typesetter-frost hover:bg-typesetter-frost/10 transition-all"
             >
-              782 113 7240
+              771 220 2862
             </a>
           </div>
         </div>

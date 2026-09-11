@@ -4,33 +4,29 @@ import gsap from 'gsap'
 
 const FEATURES = [
   {
-    tag:   'Climatización',
-    title: 'Confort Total',
-    body:  'Temperatura ideal garantizada en cualquier época del año para ti y tus invitados.',
-    stat:  '100%',
-    statLabel: 'Climatizado',
+    "tag": "Instalaciones",
+    "title": "Jardín & Salón Elegante",
+    "body": "Espacio cuidado y limpio, con un jardín encantador y áreas verdes ideales para banquetes y sesiones fotográficas.",
+    "stat": "01"
   },
   {
-    tag:   'Privacidad',
-    title: 'Eventos Íntimos',
-    body:  'Ambiente exclusivo, seguro y acogedor diseñado para celebraciones que importan.',
-    stat:  '100%',
-    statLabel: 'Privado',
+    "tag": "Capacidad",
+    "title": "Capacidad +100 Personas",
+    "body": "Salón íntimo y elegante, diseñado para celebraciones de poco más de 100 invitados.",
+    "stat": "+100"
   },
   {
-    tag:   'Atención',
-    title: 'Servicio de Excelencia',
-    body:  'Trato personalizado desde la primera consulta hasta el cierre de tu evento.',
-    stat:  '5★',
-    statLabel: 'Atención',
+    "tag": "Atención",
+    "title": "Organización y Coordinación",
+    "body": "Organización detallada de principio a fin, con anfitriones y coordinadores dedicados a resolver cada detalle de tu evento.",
+    "stat": "03"
   },
   {
-    tag:   'Precio',
-    title: 'Accesible y Justo',
-    body:  'Excelente relación calidad-precio. Aprox. $200–$300 por persona.',
-    stat:  '$200+',
-    statLabel: 'Por persona',
-  },
+    "tag": "Banquete",
+    "title": "Servicio de Meseros y Banquete",
+    "body": "Personal sumamente atento y servicial, con comida de excelente calidad garantizada para tu celebración.",
+    "stat": "04"
+  }
 ]
 
 export default function VenueFeatures() {
@@ -65,7 +61,7 @@ export default function VenueFeatures() {
             className="font-pp-mondwest font-[400] text-typesetter-frost leading-[0.9] tracking-[-0.04em]"
             style={{ fontSize: 'clamp(40px, 6vw, 96px)' }}
           >
-            El Salón
+            Salón y Jardín
           </h2>
         </div>
 

@@ -72,10 +72,10 @@ function dayRangeIso(dayKey: string): { start: string; end: string } {
 
 function buildWA(f: FormState) {
   const msg =
-    `¡Hola! Solicité una cotización en la web para un evento de tipo ` +
-    `${f.event_type} para el día ${f.event_date || 'por confirmar'} ` +
+    `¡Hola! Solicité una cotización en la web para Salón Jardín LÍA Pachuca para un evento de ` +
+    `${f.event_type} el día ${f.event_date || 'por confirmar'} ` +
     `con ${f.guest_count || 'N/A'} invitados a nombre de ${f.client_name}.`
-  return `https://api.whatsapp.com/send?phone=527821137240&text=${encodeURIComponent(msg)}`
+  return `https://wa.me/527712202862?text=${encodeURIComponent(msg)}`
 }
 
 const INPUT =
@@ -383,7 +383,7 @@ export default function QuotationForm() {
               <div>
                 <Label>WhatsApp *</Label>
                 <input type="tel" name="client_phone" value={form.client_phone}
-                  onChange={onChange} required placeholder="782 123 4567" className={INPUT} />
+                  onChange={onChange} required placeholder="771 123 4567" className={INPUT} />
               </div>
             </div>
           </div>

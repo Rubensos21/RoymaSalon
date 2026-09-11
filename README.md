@@ -1,6 +1,6 @@
-# Salón RoyMa
+# Salón Jardín LÍA Pachuca
 
-Landing page y cotizador de eventos para **Salón RoyMa**, ubicado en Poza Rica, Veracruz.
+Landing page y cotizador de eventos para **Salón Jardín LÍA Pachuca**, ubicado en Pachuca, Hidalgo.
 
 Una experiencia web pensada para presentar el salón, destacar sus servicios y facilitar solicitudes de cotización con un flujo rápido, visual y directo a WhatsApp.
 
@@ -29,7 +29,7 @@ Este proyecto combina una landing page moderna con un backend ligero para captur
 ## Estructura
 
 ```
-SalonRoyma/
+SalonJardinLia/
 ├── src/                      Frontend principal en React
 │   ├── components/           Secciones de la web
 │   ├── App.tsx

@@ -41,7 +41,7 @@ export default function AppointmentCard({
   const isDone = status === 'completed' || status === 'no_show' || status === 'cancelled';
 
   const cleanPhone = apt.client_phone.replace(/\D/g, '');
-  const waText = `Hola ${apt.client_name}, te recordamos tu cita de ${apt.service} el ${formatDateTime(apt.appointment_date)}. ¡Te esperamos!`;
+  const waText = `Hola ${apt.client_name}, te recordamos tu cita de ${apt.service} en Salón Jardín LÍA Pachuca el ${formatDateTime(apt.appointment_date)}. ¡Te esperamos!`;
   const waLink = `https://wa.me/52${cleanPhone}?text=${encodeURIComponent(waText)}`;
 
   const handleSaveReschedule = () => {

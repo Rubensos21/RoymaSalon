@@ -293,7 +293,7 @@ export default function AgendaPage() {
                     SALÓN
                   </span>
                   <span className="font-twk-lausanne font-[700] text-[17px] tracking-[-0.02em] text-typesetter-frost">
-                    ROYMA
+                    JARDÍN LÍA
                   </span>
                   <span className="inline-flex items-center bg-highlighter-blue/15 text-highlighter-blue border border-highlighter-blue/30
                                    font-twk-lausanne text-[10px] font-[550] uppercase tracking-[0.11px]

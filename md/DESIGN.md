@@ -1,5 +1,5 @@
 # Home — Style Reference
-> Salon RoyMa Landing Page
+> Salón Jardín LÍA Pachuca Landing Page
 
 **Theme:** dark
 

@@ -60,7 +60,7 @@ export default function PinScreen({ onUnlock }: PinScreenProps) {
               SALÓN
             </span>
             <span className="font-twk-lausanne font-[700] text-[20px] tracking-[-0.02em] text-typesetter-frost ml-1.5">
-              ROYMA
+              JARDÍN LÍA
             </span>
           </div>
 

@@ -3,12 +3,26 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
 const SERVICES = [
-  { tag: 'Celebración', title: 'Cumpleaños',         body: 'Celebra tu día especial con familiares y amigos en un ambiente único y lleno de alegría.' },
-  { tag: 'Familia',     title: 'Baby Shower',         body: 'Recibe a tu bebé con una celebración íntima y llena de ternura en nuestro acogedor espacio.' },
-  { tag: 'Tradición',   title: 'Quinceañeras',        body: 'Un momento inolvidable para celebrar el paso a la madurez en un entorno elegante y familiar.' },
-  { tag: 'Pareja',      title: 'Aniversarios',        body: 'Conmemora momentos especiales en pareja en un entorno íntimo, cálido y sofisticado.' },
-  { tag: 'Familia',     title: 'Reuniones Familiares', body: 'El espacio perfecto para compartir en familia, crear memorias y fortalecer vínculos.' },
-  { tag: 'Exclusivo',   title: 'Eventos Privados',    body: 'Cenas privadas, reuniones exclusivas y celebraciones corporativas con total privacidad.' },
+  {
+    "tag": "Instalaciones",
+    "title": "Jardín & Salón Elegante",
+    "body": "Espacio cuidado y limpio, con un jardín encantador y áreas verdes ideales para banquetes y sesiones fotográficas."
+  },
+  {
+    "tag": "Capacidad",
+    "title": "Capacidad +100 Personas",
+    "body": "Salón íntimo y elegante, diseñado para celebraciones de poco más de 100 invitados."
+  },
+  {
+    "tag": "Atención",
+    "title": "Organización y Coordinación",
+    "body": "Organización detallada de principio a fin, con anfitriones y coordinadores dedicados a resolver cada detalle de tu evento."
+  },
+  {
+    "tag": "Banquete",
+    "title": "Servicio de Meseros y Banquete",
+    "body": "Personal sumamente atento y servicial, con comida de excelente calidad garantizada para tu celebración."
+  }
 ]
 
 export default function Services() {
@@ -39,7 +53,7 @@ export default function Services() {
           <div>
             <p className="font-twk-lausanne text-[11px] font-[550] uppercase tracking-[0.11px]
                           text-muted-sky mb-[20px]">
-              Lo que celebramos juntos
+              Todo para tu celebración
             </p>
             <h2
               className="font-pp-mondwest font-[400] text-typesetter-frost leading-[0.9] tracking-[-0.04em]"

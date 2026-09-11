@@ -27,13 +27,13 @@ export default function Footer() {
               </span>
               <span className="font-twk-lausanne font-[700] text-[15px] tracking-[-0.02em]
                                text-typesetter-frost ml-1.5">
-                ROYMA
+                JARDÍN LÍA
               </span>
             </div>
             <p className="font-twk-lausanne font-[200] text-[14px] leading-[1.4] tracking-[0.14px]
                           text-newsprint-gray max-w-xs">
-              El espacio ideal, acogedor y climatizado para tus celebraciones
-              familiares y eventos privados en Poza Rica, Veracruz.
+              Salón y jardín para eventos en Pachuca, con espacios elegantes,
+              coordinación personalizada y servicio de banquete y meseros.
             </p>
           </div>
 
@@ -69,11 +69,11 @@ export default function Footer() {
             </span>
             <div className="space-y-[12px]">
               {[
-                { label: 'Av Uno 1309, Santa Elena', href: undefined },
-                { label: '93240 Poza Rica de Hidalgo, Ver.', href: undefined },
-                { label: '782 113 7240', href: 'tel:7821137240' },
-                { label: 'WhatsApp', href: 'https://api.whatsapp.com/send?phone=527821137240' },
-                { label: 'Ver en Google Maps', href: 'https://maps.google.com/?q=GHQ5%2BX2+Poza+Rica+de+Hidalgo' },
+                { label: 'Calle 14 de febrero, C. 24 de Febrero 601', href: undefined },
+                { label: 'San Antonio el Desmonte, 42083 Pachuca de Soto, Hgo.', href: undefined },
+                { label: '771 220 2862', href: 'tel:+527712202862' },
+                { label: 'WhatsApp', href: 'https://wa.me/527712202862' },
+                { label: 'Ver en Google Maps', href: 'https://www.google.com/maps/search/?api=1&query=3635%2BQJ%20Pachuca%20de%20Soto%2C%20Hidalgo' },
               ].map((item, i) =>
                 item.href ? (
                   <a
@@ -102,10 +102,10 @@ export default function Footer() {
         <div className="border-t border-slate-cobalt pt-[30px] flex flex-col sm:flex-row
                         items-start sm:items-center justify-between gap-[12px]">
           <p className="font-twk-lausanne text-[11px] font-[350] tracking-[0.11px] text-newsprint-gray">
-            © {new Date().getFullYear()} Salón RoyMa. Todos los derechos reservados.
+            © {new Date().getFullYear()} Salón Jardín LÍA Pachuca. Todos los derechos reservados.
           </p>
           <p className="font-twk-lausanne text-[11px] font-[350] tracking-[0.11px] text-newsprint-gray">
-            Poza Rica de Hidalgo, Veracruz, México
+            Pachuca de Soto, Hidalgo, México
           </p>
         </div>
       </div>

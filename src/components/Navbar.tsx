@@ -49,7 +49,7 @@ export default function Navbar() {
               SALÓN
             </span>
             <span className="font-twk-lausanne font-[700] text-[15px] tracking-[-0.02em] text-typesetter-frost ml-1.5">
-              ROYMA
+              JARDÍN LÍA
             </span>
           </a>
 

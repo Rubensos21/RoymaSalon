@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-const MAPS_URL = 'https://maps.google.com/?q=GHQ5%2BX2+Poza+Rica+de+Hidalgo'
-const WA_URL   = 'https://api.whatsapp.com/send?phone=527821137240&text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Sal%C3%B3n%20RoyMa.'
+const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=3635%2BQJ%20Pachuca%20de%20Soto%2C%20Hidalgo'
+const WA_URL   = 'https://wa.me/527712202862?text=' + encodeURIComponent('¡Hola! Me gustaría más información sobre Salón Jardín LÍA Pachuca.')
 
 export default function BusinessInfo() {
   const ref = useRef<HTMLDivElement>(null)
@@ -52,11 +52,11 @@ export default function BusinessInfo() {
               </span>
               <p className="font-twk-lausanne font-light text-[18px] leading-[1.4] tracking-[-0.36px]
                             text-typesetter-frost">
-                Av Uno 1309, Santa Elena
+                Calle 14 de febrero, C. 24 de Febrero 601
               </p>
               <p className="font-twk-lausanne font-light text-[18px] leading-[1.4] tracking-[-0.36px]
                             text-typesetter-frost">
-                93240 Poza Rica de Hidalgo, Ver.
+                San Antonio el Desmonte, 42083 Pachuca de Soto, Hgo.
               </p>
             </div>
 
@@ -67,9 +67,8 @@ export default function BusinessInfo() {
               </span>
               <p className="font-twk-lausanne font-extralight text-[14px] leading-[1.4] tracking-[0.14px]
                             text-newsprint-gray">
-                Atención y visitas presenciales{' '}
-                <span className="text-typesetter-frost font-normal">previa cita</span>{' '}
-                o llamada telefónica.
+                Abierto para visitas y coordinación ·{' '}
+                <span className="text-typesetter-frost font-normal">Cierra a las 6:00 PM</span>
               </p>
             </div>
 
@@ -84,7 +83,7 @@ export default function BusinessInfo() {
                          hover:opacity-90 transition-opacity"
               style={{ boxShadow: 'rgba(16,94,189,0.35) 1px 8px 20px 0px' }}
             >
-              Cómo llegar →
+              Cómo llegar · 3635+QJ →
             </a>
           </div>
 
@@ -96,18 +95,18 @@ export default function BusinessInfo() {
                 Teléfono
               </span>
               <a
-                href="tel:7821137240"
+                href="tel:+527712202862"
                 className="font-pp-mondwest font-normal text-typesetter-frost leading-[0.9]
                            tracking-[-0.04em] hover:text-highlighter-blue transition-colors"
                 style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}
               >
-                782 113 7240
+                771 220 2862
               </a>
             </div>
 
             <div className="border-t border-slate-cobalt pt-30 flex flex-col gap-20 mt-auto">
               <a
-                href="tel:7821137240"
+                href="tel:+527712202862"
                 className="inline-flex items-center border border-typesetter-frost/20 text-typesetter-frost
                            font-twk-lausanne text-[11px] font-[550] uppercase tracking-[0.11px]
                            px-20 py-3 rounded-lg self-start
